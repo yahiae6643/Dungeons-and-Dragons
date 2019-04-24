@@ -14,9 +14,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
+<script>
+    $(function() {
+
+        $('.nav-item').click(function() {
+            $("#navbarSupportedContent").collapse('hide');
+        });
+
+    });
+</script>
+
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">LOGO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,54 +51,85 @@
         </div>
     </nav>
 
-    <div id="landing">
-        <h1>RPG Club</h1>
-        <h4>“A break from the real world”</h4>
-    </div>
+    <!--<div id="landing">-->
+    <!--    <div class="name">-->
+    <!--        <h1>RPG Club</h1>-->
+    <!--        <h4>“A break from the real world”</h4>-->
+    <!--    </div>-->
+
+    <!--</div>-->
 
     <div id="about">
-        <br>
         <h5>RPG Club is a small group where students can use their imaginations and storytelling in the world of Dungeons and Dragons. In D&D, the members create their own characters and are placed into a journey where they deal with great challenges.
         </h5>
     </div>
 
+
     <div id="rules">
-        <h2>Well that sounds cool, but how do I play?</h2>
-        <br>
-        <h3>There are some things needed to successfully create a character:</h3>
 
-        <h4>To start, you need to decide on your character’s combat class. <br><br>This determines how you will act in battle.</h4>
-        <h4>You also need to calculate the character’s stats. <br><br>The stats determine your strengths and weaknesses</h4>
-        <h4>The dice are also a very important part of D&D. <br><br> If you don’t have any of your own, some will be provided at RPG Club.
-        </h4>
-        <h4>Think of your character’s personality!
-            <br><br>This is really open ended, but remember that this is a team-based game. Your character should help everyone at the table!</h4>
 
-        <h4>You also need to think about the physical traits of the character. This includes weight, height, and race!
-        </h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>To start, you need to decide on your character’s combat class. <br><br>This determines how you will act in battle.</h4>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>You also need to calculate the character’s stats. <br><br>The stats determine your strengths and weaknesses</h4>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>The dice are also a very important part of D&D. <br><br> If you don’t have any of your own, some will be provided at RPG Club.
+                    </h4>
+                </div>
+                
+                
+                 <div class="col-md-3">
+                    <h4>Think of your character’s personality! <br><br>This is really open ended, but remember that this is a team-based game. Your character should help everyone at the table!  
+                    </h4>
+                </div>
+                
+               
+               
+               
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
 
     </div>
-    
-    <div id="meeting">
-        <h2>Who runs RPG Club?</h2>
-        <h3>Mr. Rapozo is the organizer of the club and the resident dungeon master</h3>
-        
-        <h2>When is RPG Club?</h2>
-        <h3>We meet every friday around 3:00PM to 4:00PM</h3>
-        
-        <h2>Where is it?</h2>
-        <h3>We’re in room 312</h3>
-    </div>
-    
-    <div id="resources">
-        
-    </div>
-    
-    <div id="emails">
-        <h5>JaggerD7932@hstat.org</h5>
-        <h5>Yahiae6643@hstat.org</h5>
-        <h5>KRapozo@hstat.org</h5>
-    </div>
+
+    <!--<div id="meeting">-->
+    <!--    <h2>Who runs RPG Club?</h2>-->
+    <!--    <h3>Mr. Rapozo is the organizer of the club and the resident dungeon master</h3>-->
+
+    <!--    <h2>When is RPG Club?</h2>-->
+    <!--    <h3>We meet every friday around 3:00PM to 4:00PM</h3>-->
+
+    <!--    <h2>Where is it?</h2>-->
+    <!--    <h3>We’re in room 312</h3>-->
+    <!--</div>-->
+
+    <!--<div id="resources">-->
+
+    <!--</div>-->
+
+    <!--<div id="emails">-->
+    <!--    <h5>JaggerD7932@hstat.org</h5>-->
+    <!--    <h5>Yahiae6643@hstat.org</h5>-->
+    <!--    <h5>KRapozo@hstat.org</h5>-->
+    <!--</div>-->
 
 </body>
 

@@ -1,0 +1,18 @@
+#about {
+    padding:20px;
+    background-color: black;
+    color:white;
+    margin: 20px;
+    
+}
+
+#rules {
+    text-align:center;
+}
+
+.col-md-3 {
+    color:white;
+    background-color:black;
+    border:1px solid white;
+    padding:10px;
+}
