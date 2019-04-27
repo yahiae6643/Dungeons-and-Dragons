@@ -1,18 +1,93 @@
+@media (min-width: 768px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 #about {
-    padding:20px;
-    background-color: black;
-    color:white;
-    margin: 20px;
-    
+    margin: 30px;
+    padding: 40px;
+    color: white;
+    background-color: #6B7A8F;
+
 }
 
 #rules {
-    text-align:center;
+    color: white;
+}
+
+#rules h2 {
+    text-align: center;
+    padding: 30px;
+    width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    /*color:white;*/
+    background: linear-gradient(to right, #F7882F, #F7C331);
 }
 
 .col-md-3 {
-    color:white;
-    background-color:black;
-    border:1px solid white;
-    padding:10px;
+    padding: 20px;
+    color: white;
 }
+
+.col-md-3:nth-child(1) {
+    background-color: #F7882F;
+}
+
+.col-md-3:nth-child(2) {
+    background-color: #F7C331;
+}
+
+.col-md-3:nth-child(3) {
+    background-color: #6B7A8F;
+}
+
+.col-md-3:nth-child(4) {
+    background-color: #DCC7AA;
+}
+
+#meeting {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 30px;
+    width: 500px;
+}
+
+#meeting div {
+    padding: 20px;
+    color: white;
+}
+
+#meeting div:nth-child(1) {
+    background-color: #F7C331;
+}
+
+#meeting div:nth-child(2) {
+    background-color: #F7882F;
+}
+
+
+#meeting div:nth-child(3) {
+    background-color: #F7C331;
+    margin-bottom: 30px;
+}
+
+#emails {
+    text-align: center;
+    color: white;
+    width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 50px;
+    background: linear-gradient(to right, #F7882F, #F7C331);
+    margin-bottom:30px;
+}
+
