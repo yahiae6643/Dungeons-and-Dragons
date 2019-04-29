@@ -13,6 +13,10 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
@@ -23,35 +27,28 @@
             $("#navbarSupportedContent").collapse('hide');
         });
 
-        $("#rules h4").css("opacity", "0")
 
-        $(".col-md-3").click(function() {
-            $(this).find("h4").css("opacity", "1")
-            $(this).find("i").css("opacity", "0")
-        })
-        
-        
-         $("a").on('click', function(event) {
+        $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                // Store hash
+                var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
 
 
 
@@ -72,19 +69,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Club Info</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#rules">How to create a character</a>
+                    <a class="nav-link" href="#about">CLUB INFO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Meeting Info</a>
+                    <a class="nav-link" href="#meeting">MEETING INFO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Outside Links</a>
+                    <a class="nav-link" href="#">RESOURCES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#emails">Contact</a>
+                    <a class="nav-link" href="#emails">CONTACT</a>
                 </li>
             </ul>
 
@@ -93,22 +87,27 @@
 
     <div id="landing">
 
-        <div id="r">
-            <h1>R</h1>
-        </div><div id="p">
-            <h1>P</h1>
-        </div><div id="g">
-            <h1>G</h1>
+
+        <div class="title">
+            <h1>RPG Club</h1>
+            <h3>"An escape from the real world"</h3>
         </div>
 
 
     </div>
 
-    <div id="about">
-        <h2>What's RPG Club?</h2>
-        <h5>RPG Club is a small group where students can use their imaginations and storytelling in the world of Dungeons and Dragons. In D&D, the members create their own characters and are placed into a journey where they deal with great challenges.
-        </h5>
+    <div class="container">
+        <div id="about">
+            <div class="container">
+                <h2>What's RPG Club?</h2>
+                <h4>RPG Club is a small group where students can use their imaginations and storytelling in the world of Dungeons and Dragons. In D&D, the members create their own characters and are placed into a journey where they deal with great challenges.
+                </h4>
+            </div>
+
+        </div>
+
     </div>
+
 
 
     <div class="container">
@@ -155,26 +154,28 @@
         </div>
     </div>
 
-<div class="container">
-     <div id="meeting">
+    <div class="container">
+        <div id="meeting">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Who runs RPG Club?</h2>
+                    <h3>Mr. Rapozo is the organizer of the club and the resident dungeon master</h3>
+                </div>
 
-        <div>
-            <h2>Who runs RPG Club?</h2>
-            <h3>Mr. Rapozo is the organizer of the club and the resident dungeon master</h3>
-        </div>
+                <div class="col-md-4">
+                    <h2>When is RPG Club?</h2>
+                    <h3>We meet every friday around 3:00PM to 4:00PM</h3>
+                </div>
 
-        <div>
-            <h2>When is RPG Club?</h2>
-            <h3>We meet every friday around 3:00PM to 4:00PM</h3>
-        </div>
+                <div class="col-md-4">
+                    <h2>Where is it?</h2>
+                    <h3>We’re in room 312</h3>
+                </div>
+            </div>
 
-        <div>
-            <h2>Where is it?</h2>
-            <h3>We’re in room 312</h3>
         </div>
     </div>
-</div>
-   
+
     <div class="container">
         <div id="emails">
             <h2>Contact Us!</h2>
@@ -183,6 +184,7 @@
             <h5>KRapozo@hstat.org</h5>
         </div>
     </div>
+
 
 
 
