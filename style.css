@@ -6,6 +6,7 @@ html {
 
 body {
     background-color: #F2F2F2;
+    padding-top: 65px !important;
 }
 
 #landing {
@@ -38,6 +39,7 @@ body {
 /*About*/
 
 #about {
+    margin-top: 100px;
     background-color: #D94B18;
     color: white;
     padding: 20px;
@@ -165,4 +167,5 @@ body {
 nav .navbar-nav li a {
     font-family: 'Imprima', sans-serif;
     color: #D97D0D !important;
+    font-size: 20px;
 }
