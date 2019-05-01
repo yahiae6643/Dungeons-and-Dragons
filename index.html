@@ -30,7 +30,7 @@
 
         $(window).scroll(function(event) {
             var st = $(this).scrollTop();
-            if (st > lastScrollTop) { 
+            if (st > lastScrollTop) {
                 $navbar.fadeOut()
             }
             else {
@@ -200,6 +200,41 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="resources">
+            <h2>Gallery</h2>
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/d20.png" alt="Dice">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/csheet.jpg" alt="Stats">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/classes.jpg" alt="Classes">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            </div>
         </div>
     </div>
 
