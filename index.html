@@ -23,9 +23,25 @@
 <script>
     $(function() {
 
-        $('.nav-item').click(function() {
-            $("#navbarSupportedContent").collapse('hide');
+
+
+        var lastScrollTop = 0;
+        var $navbar = $('.navbar');
+
+        $(window).scroll(function(event) {
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) { 
+                $navbar.fadeOut()
+            }
+            else {
+                $navbar.fadeIn()
+            }
+            lastScrollTop = st;
+
+
         });
+
+
 
 
         $("a").on('click', function(event) {
@@ -49,8 +65,14 @@
                 });
             } // End if
         });
-        
-        
+
+        $('.nav-item').click(function() {
+            $("#collapsibleNavbar").collapse('hide');
+        });
+
+
+
+
 
 
 
@@ -59,35 +81,36 @@
 </script>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-light fixed-top">
-        <a class="navbar-brand" href="">
-            <img src="images/logo.png" alt="Logo" style="width:50px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+
+        <a class="navbar-brand" href="#"><img src="images/logo.png" style="width:50px;"></img></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-        <div class="collapse navbar-collapse topBotomBordersOut" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">CLUB INFO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#meeting">MEETING INFO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">RESOURCES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#emails">CONTACT</a>
-                </li>
-            </ul>
-
-        </div>
+        <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">CLUB INFO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#meeting">MEETING INFO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">RESOURCES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#emails">CONTACT</a>
+            </li>
+        </ul>
     </nav>
-    
-    
+
+
+    <div id="scrolltop">
+
+    </div>
+
 
     <div id="landing">
 

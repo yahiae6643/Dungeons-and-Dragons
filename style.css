@@ -6,7 +6,6 @@ html {
 
 body {
     background-color: #F2F2F2;
-    padding-top: 65px !important;
 }
 
 #landing {
@@ -167,5 +166,12 @@ body {
 nav .navbar-nav li a {
     font-family: 'Imprima', sans-serif;
     color: #D97D0D !important;
-    font-size: 20px;
+    font-size: 18px;
 }
+
+#scrolltop {
+    border: 1px solid;
+    position: absolute;
+}
+
+
