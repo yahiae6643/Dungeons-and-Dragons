@@ -183,3 +183,14 @@ nav .navbar-nav li a {
     min-height: 400px;
     min-width: 300px;
 }
+
+#resources {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Imprima", sans-serif;
+}
+
+#resources h2 {
+    color: #D97D0D;
+    font-size: 35px;
+}
