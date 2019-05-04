@@ -27,8 +27,6 @@
 <script>
     $(function() {
 
-
-
         var lastScrollTop = 0;
         var $navbar = $('.navbar');
 
@@ -42,13 +40,9 @@
             }
             lastScrollTop = st;
 
-
         });
 
-
-
-
-        $("a").on('click', function(event) {
+        $(".navbar a").on('click', function(event) {
 
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
@@ -74,13 +68,6 @@
             $("#collapsibleNavbar").collapse('hide');
         });
 
-
-
-
-
-
-
-
     });
 </script>
 
@@ -91,8 +78,8 @@
         <a class="navbar-brand" href="#"><img src="images/logo.png" style="width:50px;"></img></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
             <li class="nav-item">
@@ -102,7 +89,7 @@
                 <a class="nav-link" href="#meeting">MEETING INFO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">RESOURCES</a>
+                <a class="nav-link" href="#resources">RESOURCES</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#emails">CONTACT</a>
@@ -110,21 +97,14 @@
         </ul>
     </nav>
 
-
-    <div id="scrolltop">
-
-    </div>
-
+    <div id="scrolltop"></div>
 
     <div id="landing">
-
-
+        <img src="images/sword.png"></img>
         <div class="title">
             <h1>RPG Club</h1>
             <h3>"An escape from the real world"</h3>
         </div>
-
-
     </div>
 
     <div class="container">
@@ -134,28 +114,19 @@
                 <h4>RPG Club is a small group where students can use their imaginations and storytelling in the world of Dungeons and Dragons. In D&D, the members create their own characters and are placed into a journey where they deal with great challenges.
                 </h4>
             </div>
-
         </div>
-
     </div>
-
-
 
     <div class="container">
         <div id="rules">
 
             <h2>That's cool, but what is needed to create a character?</h2>
 
-
-
-
-
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <i class="fas fa-dice-d20"></i>
                     <h4>To start, you need to decide on your character’s combat class. <br><br>This determines your role in battle.</h4>
                 </div>
-
 
                 <div class="col-md-3 col-sm-6">
                     <i class="fas fa-dice-d20"></i>
@@ -168,19 +139,13 @@
                     </h4>
                 </div>
 
-
                 <div class="col-md-3 col-sm-6">
                     <i class="fas fa-dice-d20"></i>
                     <h4>Think of your character’s personality! <br><br>This is really open ended, but remember that this is a team-based game. Your character should help everyone at the table!
                     </h4>
                 </div>
 
-
             </div>
-
-
-
-
 
         </div>
     </div>
@@ -209,35 +174,40 @@
 
     <div class="container">
         <div id="resources">
-            <h2>Gallery</h2>
+            <div class="container">
+                <div id="title2">
+                    <h2>Gallery</h2>
+                    <h4>(Click to find out more)</h4>
+                </div>
+            </div>
+
 
             <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
 
-                <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/d20.png" alt="Dice">
+                        <a href="https://lootdice.com/articles/what-are-dnd-dice">
+                             <img src="images/dice.png" alt="Dice">
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/csheet.jpg" alt="Stats">
+                        <a href="https://roll20.net/compendium/dnd5e/Ability%20Scores#content">
+                             <img src="images/csheet.jpg" alt="Stats">
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/classes.jpg" alt="Classes">
+                        <a href="https://www.dndbeyond.com/classes">
+                            <img src="images/classes.jpg" alt="Classes">
+                        </a>
                     </div>
                 </div>
 
-                <!-- Left and right controls -->
                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
-            </a>
+                </a>
                 <a class="carousel-control-next" href="#demo" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
-            </a>
+                </a>
             </div>
         </div>
     </div>
@@ -250,9 +220,6 @@
             <h5>KRapozo@hstat.org</h5>
         </div>
     </div>
-
-
-
 
 </body>
 

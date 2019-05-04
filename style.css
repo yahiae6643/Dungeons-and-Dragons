@@ -15,6 +15,9 @@ body {
 
 }
 
+
+/*Landing*/
+
 .title {
     color: #D97D0D;
     /*border:1px solid;*/
@@ -34,6 +37,15 @@ body {
     font-size: 20px;
 }
 
+#landing img {
+    width: 300px;
+    height: 300px;
+    opacity: .3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*About*/
 
@@ -58,6 +70,9 @@ body {
 
 #rules {
     text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 50px
 }
 
@@ -126,6 +141,35 @@ body {
     background-color: #D94B18;
 }
 
+/*Resources*/
+
+.carousel img {
+    width: 400px;
+    height: 400px;
+}
+
+#resources {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-family: 'Khand', sans-serif;
+    color: #F2F2F2;
+
+}
+
+#title2 {
+    background-color: #085A8C;
+    margin: 0px;
+}
+
+#resources h2 {
+    font-size: 45px;
+}
+
+#resources h4 {
+    font-size: 20px;
+}
+
 /*Contact*/
 
 #emails {
@@ -134,7 +178,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    padding: 100px;
+    padding: 50px;
     background: linear-gradient(to right, #D94B18 50%, #085A8C 50%);
     margin-bottom: 20px;
 }
@@ -148,7 +192,6 @@ body {
     font-family: 'Imprima', sans-serif;
 }
 
-/*Resources*/
 
 /*media*/
 
@@ -159,6 +202,84 @@ body {
     .title h3 {
         font-size: 30px;
     }
+
+    #emails {
+        padding: 100px;
+    }
+}
+
+@media(max-width:768px) {
+    .carousel img {
+        max-height: 300px;
+        max-width: 300px;
+        min-height: 200px;
+        min-width: 200px;
+    }
+
+    #landing img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(min-height:992px) {
+    .title h1 {
+        font-size: 100px;
+    }
+    .title h3 {
+        font-size: 40px;
+    }
+
+    nav .navbar-nav li a {
+        font-size: 25px !important;
+    }
+
+    #about h2 {
+        font-size: 55px;
+    }
+
+    #about h4 {
+        font-size: 30px;
+    }
+
+    #rules h2 {
+        font-size: 55px;
+    }
+
+    #rules h4 {
+        font-size: 29px;
+    }
+
+    #meeting h2 {
+        font-size: 45px;
+    }
+
+    #meeting h4 {
+        font-size: 29px;
+    }
+
+    #title2 h2 {
+        font-size: 55px;
+    }
+
+    #title2 h4 {
+        font-size: 30px;
+    }
+
+    #emails h2 {
+        font-size: 55px;
+    }
+
+    #emails h5 {
+        font-size: 30px;
+    }
+
+    #landing img {
+        width: 350px;
+        height: 350px;
+    }
+
+
 }
 
 /*Nav css*/
@@ -169,8 +290,20 @@ nav .navbar-nav li a {
     font-size: 18px;
 }
 
+
+
 #scrolltop {
     border: 1px solid;
     position: absolute;
 }
 
+
+/*Carousel Arrows*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='fff' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/></svg>") !important;
+}
