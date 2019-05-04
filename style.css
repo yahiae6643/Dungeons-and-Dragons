@@ -278,6 +278,12 @@ body {
         width: 350px;
         height: 350px;
     }
+    
+    .carousel img {
+       width:500px;
+       height:500px;
+    }
+    
 
 
 }
