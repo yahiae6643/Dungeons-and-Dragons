@@ -174,9 +174,3 @@ nav .navbar-nav li a {
     position: absolute;
 }
 
-.carousel img{
-    max-height: 400px;
-    max-width: 400px;
-    min-height: 400px;
-    min-width: 300px;
-}
