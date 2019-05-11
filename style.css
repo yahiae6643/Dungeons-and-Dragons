@@ -296,6 +296,10 @@ nav .navbar-nav li a {
     font-size: 18px;
 }
 
+nav {
+    box-shadow: 5px 1px 8px #888888;
+}
+
 
 
 #scrolltop {
