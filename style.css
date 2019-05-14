@@ -92,7 +92,7 @@ body {
 }
 
 .col-md-3:nth-child(1) {
-    background-color: #F2CD13;
+    background-color: #D94B18;
 }
 
 .col-md-3:nth-child(2) {
@@ -129,7 +129,7 @@ body {
 }
 
 #meeting .col-md-4:nth-child(1) {
-    background-color: #D94B18;
+    background-color: #D97D0D;
 }
 
 #meeting .col-md-4:nth-child(2) {
@@ -313,4 +313,9 @@ nav {
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='fff' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/></svg>") !important;
+}
+
+.carousel img {
+    width:500px;
+    height:500px;
 }
